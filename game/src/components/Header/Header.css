@@ -1,0 +1,34 @@
+.heading {
+  border-radius: 1rem;
+  border: 0.2rem solid hsl(217, 16%, 45%);
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-normal img {
+  width: 9rem;
+}
+
+@media (min-width: 1199px) {
+  .heading {
+    width: 60%;
+  }
+}
+
+@media (max-width: 563px) {
+  .heading {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .heading-normal img, .heading-advanced img {
+    width: 6rem;
+    height: 5rem;
+  }
+}

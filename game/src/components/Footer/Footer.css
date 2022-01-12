@@ -1,0 +1,49 @@
+footer {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .btn {
+  color: aliceblue;
+  font-size: 0.9rem;
+  background: none;
+  margin: 0 1rem;
+}
+
+footer .btn:hover {
+  background: aliceblue;
+  color: hsl(237, 49%, 15%);
+  transition: 0.4s;
+}
+footer a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 595px) {
+  footer {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+  }
+  footer .btn {
+    font-size: 0.8rem;
+    margin: 0 0.7rem;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    gap: 0.5rem;
+    bottom: 1rem;
+  }
+  footer .btn {
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+}
